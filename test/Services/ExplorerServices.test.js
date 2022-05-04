@@ -9,3 +9,9 @@ describe("Test de ExplorerService", () => {
         expect(names).toContain("Kara")
     }); 
 })
+describe("Test de ExplorerService", () => {
+    test(" Obtener email de estudiantes con certificación", () =>{
+        const emailsWithCert = ExplorerService.emailStudentsWithCert(students);
+        expect(emailsWithCert).toContain("Montoya@visualpartnership.xyz")
+    }); 
+})
