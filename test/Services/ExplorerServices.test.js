@@ -11,13 +11,14 @@ describe("Test de ExplorerService 1", () => {
 })
 describe("Test de ExplorerService 2", () => {
     test(" Obtener email de estudiantes con certificación", () =>{
-        const emailsWithCert = ExplorerService.emailStudentsWithCert(students);
+        const emailsWithCert = ExplorerService.emailStudentsWithCert(students, true);
         expect(emailsWithCert).toContain("Montoya@visualpartnership.xyz")
     }); 
 })
 describe("Test de ExplorerService 3", () => {
     test(" Obtener estudiantes con creditos mayor a 500", () =>{
-        const above500Names = ExplorerService.studentsWithCredit500(students);
+        credits = 500
+        const above500Names = ExplorerService.studentsWithCredit500(students, credits);
         expect(above500Names).toContain("Cora")
     }); 
 })
