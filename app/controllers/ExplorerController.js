@@ -17,6 +17,3 @@ class ExplorerController {
 }
 
 module.exports = ExplorerController
-
-
-console.log(ExplorerController.allStudents(students))
